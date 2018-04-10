@@ -161,7 +161,6 @@ public class DocumentListActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextSubmit(String s) {
-                System.out.println("dfghjk:"+s);
                 //clear the previous data in search arraylist if exist
                 search_result_arraylist.clear();
                 keyword = s.toUpperCase();
@@ -188,7 +187,6 @@ public class DocumentListActivity extends AppCompatActivity {
                         search_result_arraylist.add(mDocumentList.get(i).getDocName().toString());
                     }
                 }
-
                 adapter = new ArrayAdapter<String>(DocumentListActivity.this,android.R.layout.simple_list_item_1,search_result_arraylist);
                 searchListView.setVisibility(View.VISIBLE);
                 mDocumentListRecyclerView.setVisibility(View.INVISIBLE);
