@@ -11,4 +11,5 @@
     <string name="name">Name</string>
     <string name="search_hint">Search</string>
     <string name="my_doc">My Documents</string>
+    <string name="files_size">File size</string>
 </resources>

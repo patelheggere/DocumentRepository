@@ -55,7 +55,6 @@ public class DocumentListAdapter extends RecyclerView.Adapter<DocumentListAdapte
                 holder.mWv.getSettings().setJavaScriptEnabled(true);
                 holder.mWv.getSettings().setAllowFileAccess(true);
                 holder.mWv.loadUrl(doc);
-                System.out.println("PDF url:"+doc);
                 holder.mImage.setVisibility(View.INVISIBLE);
             }
             else
@@ -66,7 +65,7 @@ public class DocumentListAdapter extends RecyclerView.Adapter<DocumentListAdapte
             if(ob.getDocName()!=null)
                 holder.mName.setText(ob.getDocName());
             if(ob.getDocSize()!=null)
-                holder.mSize.setText(ob.getDocSize());
+                holder.mSize.setText(mContext.getString(R.string.files_size)+" "+ob.getDocSize());
             if(ob.getDocUrl()!=null)
                 Glide.with(mContext).load(ob.getDocUrl()).into(holder.mImage);
         }

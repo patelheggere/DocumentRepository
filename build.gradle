@@ -28,7 +28,7 @@ task clean(type: Delete) {
 ext {
     // The following are only a few examples of the types of properties you can define.
     compileSdkVersion = 26
-    buildToolsVersion = "26.0.2"
+    buildToolsVersion = "27.1.0"
     minSdkVersion = 17
     targetSdkVersion = 26
 
